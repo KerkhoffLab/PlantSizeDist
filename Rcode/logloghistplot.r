@@ -1,5 +1,8 @@
 #plot linear binned log-log histogram of points, for visualization of
 #size distribution
+#Kelsey Dillon and Drew Kerkhoff
+#2014
+
 logloghistplot<-function(x, bins, type="density", xl="ln(Size)", yl="ln(Density)",logbin=T){
   if(logbin==T) bins<-exp(hist(log(x),breaks=bins,plot=F)$breaks)
     
