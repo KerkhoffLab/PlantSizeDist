@@ -30,7 +30,7 @@ Wetland1.shape<-Wetland1.PWfit$weibull.full$shape
 Wetland1.scale<-Wetland1.PWfit$weibull.full$scale
 
 #figure
-pdf("Figures/BFECWetland1.pdf", width=8, height=5)
+pdf("Figures/BFECWetland1.pdf", width=6.5, height=5)
 
 logloghistplot(BFECWetland1$Weight,bins=50,xl="ln(Mass (g))")
 legend(x="topright", legend=c("BFEC Wetland 1","(315 m)"), bty="n",cex=1.25)
@@ -54,7 +54,7 @@ Wetland2.scale<-Wetland2.PWfit$weibull.full$scale
 
 #figure
 
-pdf("Figures/BFECWetland2.pdf", width=8, height=5)
+pdf("Figures/BFECWetland2.pdf", width=6.5, height=5)
 
 logloghistplot(BFECWetland2$Weight,bins=50,xl="ln(Mass (g))")
 legend(x="topright", legend=c("BFEC Wetland 2","(315 m)"), bty="n",cex=1.25)
@@ -78,7 +78,7 @@ Prairie1.scale<-Prairie1.PWfit$weibull.full$scale
 
 #figure
 
-pdf("Figures/BFECPrairie1.pdf", width=8, height=5)
+pdf("Figures/BFECPrairie1.pdf", width=6.5, height=5)
 
 logloghistplot(BFECPrairie1$mass.g,bins=50,xl="ln(Mass (g))")
 legend(x="topright", legend=c("BFEC Prairie 1","(318 m)"), bty="n",cex=1.25)
@@ -102,7 +102,7 @@ Prairie2.scale<-Prairie2.PWfit$weibull.full$scale
 
 #figure
 
-pdf("Figures/BFECPrairie2.pdf", width=8, height=5)
+pdf("Figures/BFECPrairie2.pdf", width=6.5, height=5)
 
 logloghistplot(BFECPrairie2$mass.g,bins=50,xl="ln(Mass (g))")
 legend(x="topright", legend=c("BFEC Prairie 2","(318 m)"), bty="n",cex=1.25)
@@ -126,7 +126,7 @@ Prairie3.scale<-Prairie3.PWfit$weibull.full$scale
 
 #figure
 
-pdf("Figures/BFECPrairie3.pdf", width=8, height=5)
+pdf("Figures/BFECPrairie3.pdf", width=6.5, height=5)
 
 logloghistplot(BFECPrairie3$mass.g,bins=50,xl="ln(Mass (g))")
 legend(x="topright", legend=c("BFEC Prairie 3","(318 m)"), bty="n",cex=1.25)
@@ -150,7 +150,7 @@ Forest.scale<-Forest.PWfit$weibull.full$scale
 
 #figure
 
-pdf("Figures/BFECForest.pdf", width=8, height=5)
+pdf("Figures/BFECForest.pdf", width=6.5, height=5)
 
 logloghistplot(BFECForest$Biomass*1000,bins=50,xl="ln(Mass (g))")
 legend(x="topright", legend=c("BFEC Forest","(324 m)"), bty="n", cex=1.25)
@@ -177,7 +177,7 @@ GrassSage.scale<-GrassSage.PWfit$weibull.full$scale
 
 #figure
 
-pdf("Figures/RMBLGrassSage.pdf", width=8, height=5)
+pdf("Figures/RMBLGrassSage.pdf", width=6.5, height=5)
 
 logloghistplot(na.omit(RMBLGrassSage$biomass),bins=50,xl="ln(Mass (g))")
 legend(x="topright", legend=c("RMBL Grass/Sage","(2,465 m)"), bty="n", cex=1.25)
@@ -201,7 +201,7 @@ WetMeadow.scale<-WetMeadow.PWfit$weibull.full$scale
 
 #figure
 
-pdf("Figures/RMBLWetMeadow.pdf", width=8, height=5)
+pdf("Figures/RMBLWetMeadow.pdf", width=6.5, height=5)
 
 logloghistplot(na.omit(RMBLWetMeadow$biomass),bins=50,xl="ln(Mass (g))")
 legend(x="topright", legend=c("RMBL Wet Meadow","(2,700 m)"), bty="n", cex=1.25)
@@ -225,7 +225,7 @@ Alpine1.scale<-Alpine1.PWfit$weibull.full$scale
 
 #figure
 
-pdf("Figures/RMBLAlpine1.pdf", width=8, height=5)
+pdf("Figures/RMBLAlpine1.pdf", width=6.5, height=5)
 
 logloghistplot(na.omit(RMBLAlpine1$biomass),bins=50,xl="ln(Mass (g))")
 legend(x="topright", legend=c("RMBL Alpine 1","(2,815 m)"), bty="n", cex=1.25)
@@ -249,7 +249,7 @@ Alpine2.scale<-Alpine2.PWfit$weibull.full$scale
 
 #figure
 
-pdf("Figures/RMBLAlpine2.pdf", width=8, height=5)
+pdf("Figures/RMBLAlpine2.pdf", width=6.5, height=5)
 
 logloghistplot(na.omit(RMBLAlpine2$biomass),bins=50,xl="ln(Mass (g))")
 legend(x="topright", legend=c("RMBL Alpine 2","(3,165 m)"), bty="n", cex=1.25)
@@ -273,7 +273,7 @@ Alpine3.scale<-Alpine3.PWfit$weibull.full$scale
 
 #figure
 
-pdf("Figures/RMBLAlpine3.pdf", width=8, height=5)
+pdf("Figures/RMBLAlpine3.pdf", width=6.5, height=5)
 
 logloghistplot(na.omit(RMBLAlpine3$biomass),bins=50,xl="ln(Mass (g))")
 legend(x="topright", legend=c("RMBL Alpine 3","(3,380 m)"), bty="n", cex=1.25)
@@ -299,7 +299,7 @@ Desert.scale<-Desert.PWfit$weibull.full$scale
 
 #figure
 
-pdf("Figures/THDLDesert.pdf", width=8, height=5)
+pdf("Figures/THDLDesert.pdf", width=6.5, height=5)
 
 logloghistplot(na.omit(THDLDesert$DryMass),bins=50,xl="ln(Mass (g))")
 legend(x="topright", legend=c("THDL Desert","(947 m)"), bty="n", cex=1.25)
@@ -307,26 +307,3 @@ lines(log(Desert.Pfit.d)~log(Desert.X.s), col="red")
 lines(log(Desert.Wfit.d)~log(Desert.X.s), col="blue")
 
 dev.off()
-
-#for Desert Data - Tumamoc
-sizes<-TumamocPlotMass$DryMass #assigns weights to variable "sizes"
-logloghistplot(sizes,bins=50,xl="ln(Mass (g))")
-legend(x="topright", legend=c("Tumamoc Hill Desert","(947 m)"), bty="n", cex=1.25)
-
-TumamocPlotMass.PWfit<-PandW.fits(na.omit(TumamocPlotMass$DryMass))
-TumamocPlotMass.X.s<-TumamocPlotMass.PWfit$pareto.full.fits[,1]
-TumamocPlotMass.Pfit.d<-TumamocPlotMass.PWfit$pareto.full.fits[,2]
-TumamocPlotMass.tPfit.d<-TumamocPlotMass.PWfit$tpareto.full.fits[,2]
-TumamocPlotMass.Wfit.d<-TumamocPlotMass.PWfit$weibull.full.fits[,2]
-lines(log(TumamocPlotMass.Pfit.d)~log(TumamocPlotMass.X.s), col="red")
-lines(log(TumamocPlotMass.Wfit.d)~log(TumamocPlotMass.X.s), col="blue")
-lines(log(TumamocPlotMass.tPfit.d)~log(TumamocPlotMass.X.s), col="green")
-
-TumamocPlotMass.pareto.AIC<-(-2)*TumamocPlotMass.PWfit$pareto.full$loglike+2
-TumamocPlotMass.tpareto.AIC<-(-2)*TumamocPlotMass.PWfit$tpareto.full$loglike+2
-
-TumamocPlotMass.weibull.AIC<-(-2)*TumamocPlotMass.PWfit$weibull.full$loglike+4
-TumamocPlotMass.exponent<-TumamocPlotMass.PWfit$pareto.full$exponent
-TumamocPlotMass.shape<-TumamocPlotMass.PWfit$weibull.full$shape
-TumamocPlotMass.scale<-TumamocPlotMass.PWfit$weibull.full$scale
-
