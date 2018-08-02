@@ -210,7 +210,7 @@ lines(log(WetMeadow.Wfit.d)~log(WetMeadow.X.s), col="blue")
 
 dev.off()
 
-#Alpine plot 1 (Road)
+#Subalpine plot 1 (Road)
 #analysis
 Alpine1.PWfit<-pwtp.fits(na.omit(RMBLAlpine1$biomass))
 Alpine1.X.s<-Alpine1.PWfit$pareto.full.fits[,1]
@@ -225,16 +225,16 @@ Alpine1.scale<-Alpine1.PWfit$weibull.full$scale
 
 #figure
 
-pdf("Figures/RMBLAlpine1.pdf", width=6.5, height=5)
+pdf("Figures/RMBLSubalpine1.pdf", width=6.5, height=5)
 
 logloghistplot(na.omit(RMBLAlpine1$biomass),bins=50,xl="ln(Mass (g))")
-legend(x="topright", legend=c("RMBL Alpine 1","(2,815 m)"), bty="n", cex=1.25)
+legend(x="topright", legend=c("RMBL Subalpine 1","(2,815 m)"), bty="n", cex=1.25)
 lines(log(Alpine1.Pfit.d)~log(Alpine1.X.s), col="red")
 lines(log(Alpine1.Wfit.d)~log(Alpine1.X.s), col="blue")
 
 dev.off()
 
-#Alpine plot 2 (Pfeiler)
+#Subalpine plot 2 (Pfeiler)
 #analysis
 Alpine2.PWfit<-pwtp.fits(na.omit(RMBLAlpine2$biomass))
 Alpine2.X.s<-Alpine2.PWfit$pareto.full.fits[,1]
@@ -249,16 +249,16 @@ Alpine2.scale<-Alpine2.PWfit$weibull.full$scale
 
 #figure
 
-pdf("Figures/RMBLAlpine2.pdf", width=6.5, height=5)
+pdf("Figures/RMBLSubalpine2.pdf", width=6.5, height=5)
 
 logloghistplot(na.omit(RMBLAlpine2$biomass),bins=50,xl="ln(Mass (g))")
-legend(x="topright", legend=c("RMBL Alpine 2","(3,165 m)"), bty="n", cex=1.25)
+legend(x="topright", legend=c("RMBL Subalpine 2","(3,165 m)"), bty="n", cex=1.25)
 lines(log(Alpine2.Pfit.d)~log(Alpine2.X.s), col="red")
 lines(log(Alpine2.Wfit.d)~log(Alpine2.X.s), col="blue")
 
 dev.off()
 
-#Alpine plot 3 (PBM)
+#Subalpine plot 3 (PBM)
 #analysis
 Alpine3.PWfit<-pwtp.fits(na.omit(RMBLAlpine3$biomass))
 Alpine3.X.s<-Alpine3.PWfit$pareto.full.fits[,1]
@@ -273,10 +273,10 @@ Alpine3.scale<-Alpine3.PWfit$weibull.full$scale
 
 #figure
 
-pdf("Figures/RMBLAlpine3.pdf", width=6.5, height=5)
+pdf("Figures/RMBLSubalpine3.pdf", width=6.5, height=5)
 
 logloghistplot(na.omit(RMBLAlpine3$biomass),bins=50,xl="ln(Mass (g))")
-legend(x="topright", legend=c("RMBL Alpine 3","(3,380 m)"), bty="n", cex=1.25)
+legend(x="topright", legend=c("RMBL Subalpine 3","(3,380 m)"), bty="n", cex=1.25)
 lines(log(Alpine3.Pfit.d)~log(Alpine3.X.s), col="red")
 lines(log(Alpine3.Wfit.d)~log(Alpine3.X.s), col="blue")
 
