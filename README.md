@@ -13,6 +13,8 @@ All analyses were done in R
 
 * 03.CrossCommunity.R - cross community analyses (Figure 3)
 
+* TreeMortalitySupplement.R - supplemental analysis of mortality (Figure S1)
+
 
 **Folder inventory**:
 
