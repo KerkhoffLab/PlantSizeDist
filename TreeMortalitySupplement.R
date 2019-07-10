@@ -5,7 +5,7 @@
 #Dillon et al.
 #Drew Kerkhoff 2018
 
-#Assumes you have already read in all of the plot data using `ReadData.R`
+#Assumes you have already read in all of the plot data using `1.ReadData.R`
 
 require(ggplot2)
 require(dplyr)
