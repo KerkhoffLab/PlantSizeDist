@@ -31,6 +31,9 @@ RMBLWetMeadow <- read.csv("data/RMBLWetMeadow.csv", header=TRUE)
 #THDL
 THDLDesert <- read.csv("data/TumamocDesert.csv", header=TRUE)
 
+#Supplement analysis of tree mortality rate at the BFEC
+BFECTreeMortality <- read.csv("data/BFECForestMortality.csv")
+
 
 
 
